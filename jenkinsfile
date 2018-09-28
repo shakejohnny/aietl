@@ -1,0 +1,8 @@
+node{
+     stage('SCM Checkout'){
+       git 'https://github.com/shakejohnny/aietl'
+     }
+     stage('Compile-Package'){
+       sh 'mvn package'
+     }
+}
